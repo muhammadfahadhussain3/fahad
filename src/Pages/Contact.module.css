@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&display=swap");
+
+.contact {
+  font-family: "Poppins", sans-serif !important;
+  height: 100%;
+  width: 100%;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  width: 280px;
+  height: 170px;
+  border-radius: 1.2rem;
+  font-weight: 500;
+  border: 1px solid #39a6e8;
+}
+.cardPart:hover {
+  background-color: #39a6e8;
+  color: #253041;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  color: white;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+.btn:hover {
+  color: #253041;
+}
+.title1{
+    text-align: center;
+  }
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  .title::after {
+    position: relative;
+    bottom: 30px;
+    left: 150px;
+    content: "";
+    display: block;
+    width: 70px;
+    height: 0.12rem; 
+    background-color: white;
+    margin: 10px auto; 
+  }
+
+@media screen and (max-width: 700px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title::after {
+  
+    display: none;
+
+  }
+}
